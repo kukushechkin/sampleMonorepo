@@ -6,7 +6,7 @@ final class someComponentTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(someComponent().text, "someComponent!")
+        XCTAssertEqual(someComponent().text, "someComponent")
     }
 
     static var allTests = [
