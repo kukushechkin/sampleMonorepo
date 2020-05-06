@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "someMonorepo",
+    name: "sampleMonorepo",
     products: [
         .library(name: "someComponent",     targets: ["someComponent"]),
         .library(name: "anotherComponent",  targets: ["anotherComponent"]),
