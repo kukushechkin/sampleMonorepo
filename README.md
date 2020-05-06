@@ -1,4 +1,6 @@
-# someMonorepo
+# sampleMonorepo
+
+![Swift](https://github.com/kukushechkin/sampleMonorepo/workflows/Swift/badge.svg?branch=master)
 
 An example of how to organize monorepository that provides SPM modules for the outside world. See https://github.com/kukushechkin/sampleProject for how to use those dependencies.
 
