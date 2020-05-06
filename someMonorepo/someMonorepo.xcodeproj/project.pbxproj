@@ -1,0 +1,135 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		ED9667612462D0430014DC36 /* someMonorepo */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = ED9667622462D0430014DC36 /* Build configuration list for PBXAggregateTarget "someMonorepo" */;
+			buildPhases = (
+				ED9667652462D0520014DC36 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = someMonorepo;
+			productName = someMonorepo;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXGroup section */
+		ED9667572462D0200014DC36 = {
+			isa = PBXGroup;
+			children = (
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		ED9667582462D0200014DC36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				TargetAttributes = {
+					ED9667612462D0430014DC36 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = ED96675B2462D0200014DC36 /* Build configuration list for PBXProject "someMonorepo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED9667572462D0200014DC36;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED9667612462D0430014DC36 /* someMonorepo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ED9667652462D0520014DC36 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swift build\nswift test\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ED96675C2462D0200014DC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		ED96675D2462D0200014DC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		ED9667632462D0430014DC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC5986BBE6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ED9667642462D0430014DC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC5986BBE6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED96675B2462D0200014DC36 /* Build configuration list for PBXProject "someMonorepo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED96675C2462D0200014DC36 /* Debug */,
+				ED96675D2462D0200014DC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED9667622462D0430014DC36 /* Build configuration list for PBXAggregateTarget "someMonorepo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED9667632462D0430014DC36 /* Debug */,
+				ED9667642462D0430014DC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED9667582462D0200014DC36 /* Project object */;
+}
