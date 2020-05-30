@@ -18,9 +18,9 @@
       location = "group:someTarget/someTarget.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Package.swift">
+      location = "group:README.md">
    </FileRef>
    <FileRef
-      location = "group:README.md">
+      location = "group:Package.swift">
    </FileRef>
 </Workspace>

@@ -3,25 +3,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "sampleMonorepo",
+    name: "MonorepoUmbrella",
     products: [
-        .library(name: "someComponent",     targets: ["someComponent"]),
-        .library(name: "anotherComponent",  targets: ["anotherComponent"]),
+        .library(
+            name: "someMonorepo",
+            targets: ["someMonorepo"]),
     ],
     dependencies: [
-        // SPM does not support mixing of branch-based and unversioned dependencies :(
-        // .package(path: "someComponent"),
-        // .package(path: "anotherComponent"),
+         .package(path: "someComponent"),
+         .package(path: "anotherComponent"),
     ],
     targets: [
-        .target(name: "someComponent", dependencies: [],
-                path: "someComponent/Sources/someComponent"),
-        .testTarget(name: "someComponentTests", dependencies: ["someComponent"],
-                    path: "someComponent/Tests/someComponentTests"),
-
-        .target(name: "anotherComponent", dependencies: [],
-                path: "anotherComponent/Sources/anotherComponent"),
-        .testTarget(name: "anotherComponentTests", dependencies: ["anotherComponent"],
-                    path: "anotherComponent/Tests/anotherComponentTests"),
+        .target(name: "someMonorepo", dependencies: ["someComponent", "anotherComponent"]),
     ]
 )

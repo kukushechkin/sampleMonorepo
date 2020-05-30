@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		ED96674A2462CE9C0014DC36 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9667492462CE9B0014DC36 /* main.swift */; };
-		ED9667542462CF8B0014DC36 /* someComponent in Frameworks */ = {isa = PBXBuildFile; productRef = ED9667532462CF8B0014DC36 /* someComponent */; };
-		ED9667562462CF8D0014DC36 /* anotherComponent in Frameworks */ = {isa = PBXBuildFile; productRef = ED9667552462CF8D0014DC36 /* anotherComponent */; };
+		EDA601322482FD8000244CCA /* anotherComponent in Frameworks */ = {isa = PBXBuildFile; productRef = EDA601312482FD8000244CCA /* anotherComponent */; };
+		EDA601342482FD8300244CCA /* someComponent in Frameworks */ = {isa = PBXBuildFile; productRef = EDA601332482FD8300244CCA /* someComponent */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		ED43A12B246C678A000336FF /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		ED9667462462CE9B0014DC36 /* someTarget */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = someTarget; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9667492462CE9B0014DC36 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,8 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED9667562462CF8D0014DC36 /* anotherComponent in Frameworks */,
-				ED9667542462CF8B0014DC36 /* someComponent in Frameworks */,
+				EDA601342482FD8300244CCA /* someComponent in Frameworks */,
+				EDA601322482FD8000244CCA /* anotherComponent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +71,7 @@
 		ED9667522462CF8B0014DC36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED43A12B246C678A000336FF /* Package.swift */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,8 +93,8 @@
 			);
 			name = someTarget;
 			packageProductDependencies = (
-				ED9667532462CF8B0014DC36 /* someComponent */,
-				ED9667552462CF8D0014DC36 /* anotherComponent */,
+				EDA601312482FD8000244CCA /* anotherComponent */,
+				EDA601332482FD8300244CCA /* someComponent */,
 			);
 			productName = someTarget;
 			productReference = ED9667462462CE9B0014DC36 /* someTarget */;
@@ -302,13 +304,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ED9667532462CF8B0014DC36 /* someComponent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = someComponent;
-		};
-		ED9667552462CF8D0014DC36 /* anotherComponent */ = {
+		EDA601312482FD8000244CCA /* anotherComponent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = anotherComponent;
+		};
+		EDA601332482FD8300244CCA /* someComponent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = someComponent;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

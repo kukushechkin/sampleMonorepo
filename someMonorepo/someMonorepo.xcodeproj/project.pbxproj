@@ -20,10 +20,15 @@
 		};
 /* End PBXAggregateTarget section */
 
+/* Begin PBXFileReference section */
+		EDA60135248304C000244CCA /* someMonorepo */ = {isa = PBXFileReference; lastKnownFileType = folder; name = someMonorepo; path = ../Sources/someMonorepo; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		ED9667572462D0200014DC36 = {
 			isa = PBXGroup;
 			children = (
+				EDA60135248304C000244CCA /* someMonorepo */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +78,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "swift build\nswift test\n";
+			shellScript = "swift build\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
